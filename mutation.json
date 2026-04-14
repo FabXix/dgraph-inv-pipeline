@@ -1,0 +1,72 @@
+{
+  "set": [
+    {
+      "uid": "_:c1",
+      "dgraph.type": "Customer",
+      "customer_name": "Ana Lopez",
+      "email": "ana@email.com",
+      "city": "Guadalajara"
+    },
+    {
+      "uid": "_:c2",
+      "dgraph.type": "Customer",
+      "customer_name": "Juan Perez",
+      "email": "juan@email.com",
+      "city": "Monterrey"
+    },
+    {
+      "uid": "_:p1",
+      "dgraph.type": "Product",
+      "name": "Laptop",
+      "price": 15000,
+      "category": "Electronics"
+    },
+    {
+      "uid": "_:p2",
+      "dgraph.type": "Product",
+      "name": "Mouse",
+      "price": 250,
+      "category": "Electronics"
+    },
+    {
+      "uid": "_:p3",
+      "dgraph.type": "Product",
+      "name": "Desk",
+      "price": 3000,
+      "category": "Furniture"
+    },
+    {
+      "uid": "_:o1",
+      "dgraph.type": "Order",
+      "order_id": "ORD001",
+      "date": "2024-03-01T00:00:00Z",
+      "total": 15250,
+      "placed_by": {
+        "uid": "_:c1"
+      },
+      "contains": [
+        {
+          "uid": "_:p1"
+        },
+        {
+          "uid": "_:p2"
+        }
+      ]
+    },
+    {
+      "uid": "_:o2",
+      "dgraph.type": "Order",
+      "order_id": "ORD002",
+      "date": "2024-03-05T00:00:00Z",
+      "total": 3000,
+      "placed_by": {
+        "uid": "_:c2"
+      },
+      "contains": [
+        {
+          "uid": "_:p3"
+        }
+      ]
+    }
+  ]
+}
