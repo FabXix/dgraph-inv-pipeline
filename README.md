@@ -23,8 +23,11 @@ Relationships:
 ## Project Structure
 .
 ├── main.py
+
 ├── products.csv
+
 ├── suppliers.csv
+
 ├── product_supplier.csv
 
 ## Features
